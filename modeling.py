@@ -74,7 +74,7 @@ def main():
     optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
     # Training the model
-    epochs = 100
+    epochs = 500
 
     for epoch in range(epochs):
         optimizer.zero_grad()
@@ -98,7 +98,7 @@ def main():
     plt.show()
 
     # Predicting for next 26 weeks (approx. rest of 2023)
-    future_weeks = 26
+    future_weeks = 52
     forecast = []
 
     current_week = testX[-1:].tolist()
